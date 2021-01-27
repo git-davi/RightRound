@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  vpn_rotator:
+    container_name: vpn_rotator
+    build: ./ip_rotator
+    volumes: 
+      - ./vpn_config:/home/vpn_config
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    network_mode: host

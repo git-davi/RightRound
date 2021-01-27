@@ -1,0 +1,3 @@
+*/30 * * * * /bin/bash /home/rotate-ip.sh
+@reboot /bin/bash /home/rotate-ip.sh
+
