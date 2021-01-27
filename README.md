@@ -33,9 +33,8 @@ $ sudo docker-compose stop && sudo docker-compose rm
 If you would like to improve this project you are welcome.
 
 ## Troubleshooting
-After stop the channel doesn't go encrypted. You will have to remove the container and start a new one.  
+After stop the channel doesn't go encrypted. You will have to remove the container and start a new one. Or wait till cronjob starts again.  
 ```
 $ sudo docker-compose rm && sudo docker-compose up -d
 ```
 This will issue a reboot and make the cronjob start.
-- Why is connection dropping? I dont'know
