@@ -8,7 +8,10 @@ Btw this tool is completely agnostic to the service so it can work with every VP
 
 ## Setup and run
 Put in `vpn_config/conn` your config `.ovpn` files.  
-If you use NordVPN you can find them [here](https://nordvpn.com/ovpn/).  
+If you use NordVPN you can run just the script `nordvpn_downloader.sh` in the current dir or you can find them [here](https://nordvpn.com/ovpn/).  
+```
+$ ./nordvpn_downloader.sh
+```
 If you use HideMyAss check [here](https://vpn.hidemyass.com/vpn-config/OpenVPN-2.4/).  
 Otherwise you have to gather it on your own...  
 Place your credentials separated by a new line in `vpn_config/creds.txt` (if `auth-user-pass` is enabled).  
