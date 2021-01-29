@@ -32,6 +32,15 @@ To restart remove the container :
 $ sudo docker-compose stop && sudo docker-compose rm
 ```
 
+## About security
+Yeah a plain text is not a smart and secure way to store passwords.  
+To make the file readable only to root :
+```
+$ sudo chown root vpn_config/creds.txt
+$ sudo chmod 400 vpn_config/creds.txt
+```
+That's not really safe, but better than nothing.
+
 ### About Contributing
 If you would like to improve this project you are welcome.
 
