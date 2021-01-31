@@ -10,3 +10,9 @@ services:
     cap_add:
       - NET_ADMIN
     network_mode: host
+
+  proxy:
+    container_name: squid_proxy
+    image: datadog/squid
+    ports: 
+      - "3128:3128"
